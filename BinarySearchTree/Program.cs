@@ -2,6 +2,7 @@
 
 Console.WriteLine("Welcome to binary search tree");
 
+
 Binary<int> binary = new Binary<int>(56);
 binary.Add(30);
 binary.Add(70);
@@ -17,4 +18,6 @@ binary.Add(63);
 binary.Add(67);
 binary.Display();
 binary.GetSize();
+bool result = binary.IfExists(19, binary);
+Console.WriteLine(result);
 Console.ReadKey();
